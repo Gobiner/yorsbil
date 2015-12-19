@@ -2,6 +2,8 @@ defmodule Yorsbil.PageView do
   use Yorsbil.Web, :view
 
   def randword do
+    :random.seed(:os.timestamp)
+    
     vowels = ["a", "e", "i", "o", "u", "ae", "ee", "ie", "oe", "ue", "oo", "ar", "ur", "or", "au", "er", "ow", "oi", "air", "ear"]
     consonants = ["b", "d", "f", "g", "h", "j", "k", "l", "m", "n", "p", "r", "s", "t", "w", "wh", "y", "z", "th", "ch", "sh", "zh", "ng"]
     num_syllables = [1,2,3,4] |> Enum.random
