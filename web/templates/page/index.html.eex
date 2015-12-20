@@ -1,5 +1,6 @@
 <div class="container-fluid">
 
+  <div class="row"><div class="jumbotron"><%= :rand.export_seed() |> inspect %></div></div>
 <div class="row">
 <div class="col-xs-6">
   <h2><%= randword %></h2>
@@ -53,5 +54,5 @@
     <h2><%= randword %></h2>
   </div>
 </div>
-
+  
 </div>
