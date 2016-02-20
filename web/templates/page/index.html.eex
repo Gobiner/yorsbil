@@ -1,6 +1,10 @@
 <div class="container-fluid">
 
-  <div class="row"><div class="jumbotron"><%= :rand.export_seed() |> inspect %></div></div>
+  <div class="row">
+    <a href="/" class="center-block btn btn-default btn-lg">Refresh</a>
+  </div>
+
+  <%= for loop <- List.duplicate(1,9)  do %>
 <div class="row">
 <div class="col-xs-6">
   <h2><%= randword %></h2>
@@ -9,50 +13,10 @@
   <h2><%= randword %></h2>
 </div>
 </div>
+  <%= end %>
 
-<div class="row">
-  <div class="col-xs-6">
-    <h2><%= randword %></h2>
+  <div class="row">
+    <a href="/"class="center-block btn btn-default btn-lg">Refresh</a>
   </div>
-  <div class="col-xs-6">
-    <h2><%= randword %></h2>
-  </div>
-</div>
 
-<div class="row">
-  <div class="col-xs-6">
-    <h2><%= randword %></h2>
-  </div>
-  <div class="col-xs-6">
-    <h2><%= randword %></h2>
-  </div>
-</div>
-
-<div class="row">
-  <div class="col-xs-6">
-    <h2><%= randword %></h2>
-  </div>
-  <div class="col-xs-6">
-    <h2><%= randword %></h2>
-  </div>
-</div>
-
-<div class="row">
-  <div class="col-xs-6">
-    <h2><%= randword %></h2>
-  </div>
-  <div class="col-xs-6">
-    <h2><%= randword %></h2>
-  </div>
-</div>
-
-<div class="row">
-  <div class="col-xs-6">
-    <h2><%= randword %></h2>
-  </div>
-  <div class="col-xs-6">
-    <h2><%= randword %></h2>
-  </div>
-</div>
-  
 </div>
