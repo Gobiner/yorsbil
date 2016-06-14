@@ -7,10 +7,10 @@
   <%= for loop <- List.duplicate(1,9)  do %>
 <div class="row">
 <div class="col-xs-6">
-  <h2><%= randword %></h2>
+  <h2><%= Yorsbil.Generator.randword %></h2>
 </div>
 <div class="col-xs-6">
-  <h2><%= randword %></h2>
+  <h2><%= Yorsbil.Generator.randword %></h2>
 </div>
 </div>
   <%= end %>

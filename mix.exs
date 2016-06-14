@@ -17,7 +17,7 @@ defmodule Yorsbil.Mixfile do
   # Type `mix help compile.app` for more information.
   def application do
     [mod: {Yorsbil, []},
-     applications: [:phoenix, :phoenix_html, :cowboy, :logger]]
+     applications: [:phoenix, :phoenix_html, :cowboy, :logger, :defmemo]]
   end
 
   # Specifies which paths to compile per environment.
@@ -31,6 +31,7 @@ defmodule Yorsbil.Mixfile do
     [{:phoenix, "~> 1.0.3"},
      {:phoenix_html, "~> 2.1"},
      {:phoenix_live_reload, "~> 1.0", only: :dev},
+     {:defmemo, "~> 0.1.1"},
      {:cowboy, "~> 1.0"}]
   end
 end
